@@ -129,6 +129,8 @@ if(HOST_ASM_MASM_X86_64)
 		#bn/mont5-masm-x86_64.S
 		modes/ghash-masm-x86_64.S
 		rc4/rc4-masm-x86_64.S
+
+		sha/sha256_amd64_generic.S
 	)
 	add_definitions(-Dendbr64=)
 	add_definitions(-DLIBRESSL_USE_AES_ASSEMBLY)
@@ -154,6 +156,8 @@ if(HOST_ASM_MINGW64_X86_64)
 		#bn/mont5-mingw64-x86_64.S
 		modes/ghash-mingw64-x86_64.S
 		rc4/rc4-mingw64-x86_64.S
+
+		sha/sha256_amd64_generic.S
 	)
 	add_definitions(-Dendbr32=endbr64)
 	add_definitions(-DLIBRESSL_USE_AES_ASSEMBLY)
